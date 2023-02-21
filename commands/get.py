@@ -15,7 +15,7 @@ def getDefinition(word):
     apiUrl = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/{w}?key={k}".format(k = apiKey, w=word)
     try:
         ## Printing the some helpful info to User ##
-        click.echo(c(f"Working on getting definition for the: {word}", "yellow", attrs=['bold']))
+        click.echo(c(f"Working on getting definition for the: {word", "yellow", attrs=['bold']))
         click.echo("------------------------------------------------")
         ## Curling the url and getting the word definition from Merriam Dictionary Api ##
         wordJson = r.get(apiUrl).json()
