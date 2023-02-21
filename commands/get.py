@@ -31,7 +31,7 @@ def getDefinition(word):
         ##Returining the ouput as we wanted ## 
         result = str(pronunciation + " " + "(" + kind + ")" + ":" + " " + definition)
 
-        click.echo(c("The defiinition for the {w}".format(w=word), "green", attrs=['bold']))
+        click.echo(c("The defiinition for the word:{w}".format(w=word), "green", attrs=['bold']))
         click.echo("------------------------------------------------")
         click.echo(c(result, "green", attrs=['bold']))
     except:
